@@ -1,0 +1,6 @@
+We can access private variables,methods from other class by get-set method.
+Private variables are accessible in the same class.
+.class file contains the class code in binary format(010101)
+javac firstprogram.java=javac means java compiler so this command converts all the classes present in the firstprogram.java file into binary format which is present in .class file 
+java world=we use java world command because class world has the main method and the program starts executing from the main method.
+(this) keyword is object which is used to access the variables inside the class.
