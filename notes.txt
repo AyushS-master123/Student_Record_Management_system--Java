@@ -4,3 +4,4 @@ Private variables are accessible in the same class.
 javac firstprogram.java=javac means java compiler so this command converts all the classes present in the firstprogram.java file into binary format which is present in .class file 
 java world=we use java world command because class world has the main method and the program starts executing from the main method.
 (this) keyword is object which is used to access the variables inside the class.
+Constructors automatically calls when we create an object of a class. Constructors are also used to put some values in the variables in the class.

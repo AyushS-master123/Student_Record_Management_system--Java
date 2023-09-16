@@ -31,12 +31,23 @@ class Student{
 
 }
 
+class StudentDataBase{
+    private Map<Integer,Student>students;
+    public StudentDataBase(){
+        students=new HashMap<>();
+        
+    }
+    public void addStudent(Student s){
+        students.put(s.getId(),s);
+
+    }
+}
+
 
 class world{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        Student s=new Student(52899,"Ayush",12,5);
-        s.displayStudentDetails();
+        StudentDataBase db=new StudentDataBase();
         while(true){
             System.out.println("Welcome student!");
             System.out.println("1: Add a new student");
@@ -51,13 +62,16 @@ class world{
                 case "1":
                 System.out.println("Enter student id");
                 int id=sc.nextInt();
-                System.out.println("Enter stduent name");
-                String name=sc.nextLine();
+                System.out.println("Enter student name");
+                String name=sc.next();
                 System.out.println("Enter student age");
                 int age=sc.nextInt();
                 System.out.println("Enter student grade");
                 int grade=sc.nextInt();
-
+                Student S1=new Student(id, name, age, grade);
+                db.addStudent(S1);
+                System.out.println("Student details added succesfully");
+                break;
             }
         }
     }
