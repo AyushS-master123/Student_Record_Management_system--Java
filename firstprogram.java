@@ -32,9 +32,15 @@ class Student{
 }
 
 class StudentDataBase{
+    //Integer represents id.
+    //Student represent Id,name,age,grade.
+    //Integer contains id because it is used to match the id in the database to get the students info.
+    //students is the name of the map. You can name the map anything.
     private Map<Integer,Student>students;
+    //This is a constructor
+    //Constructor is declaring an empty map.
     public StudentDataBase(){
-        students=new HashMap<>();
+        students=new HashMap<>();//<> is a syntax. The () are empty because we are making a empty map.We are using it because 
         
     }
     public void addStudent(Student s){

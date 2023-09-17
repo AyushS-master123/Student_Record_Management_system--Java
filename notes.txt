@@ -4,4 +4,14 @@ Private variables are accessible in the same class.
 javac firstprogram.java=javac means java compiler so this command converts all the classes present in the firstprogram.java file into binary format which is present in .class file 
 java world=we use java world command because class world has the main method and the program starts executing from the main method.
 (this) keyword is object which is used to access the variables inside the class.
-Constructors automatically calls when we create an object of a class. Constructors are also used to put some values in the variables in the class.
+Constructors automatically calls when we create an object of a class. 
+Constructors are also used to put some values in the variables in the class.
+You need a constuctor to create an object of a class.
+Constructor is so important that java already provides a default constructor.
+We can make some constructor to put the value of a variable of a class.
+Diffrence between function and constructor:
+    1.Function has a datatype and constructor doesn't.
+    2.Function has a diffrent name but constructor has the exact same name as the class name.
+    3.Function has a retrun statement but constructor doesnt because it does not have a datatype.
+    4.Functions needs to be called but constructor gets automatically called when we make an object.
+Class is a custom data type.
